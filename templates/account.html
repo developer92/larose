@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<!-- build:section layout.head -->
+<!-- /build -->
+<body>
+	<div id="svg-icon-placeholder" style="display: none;"></div>
+	<div id="wrapper">
+		<!-- build:section layout.header -->
+		<!-- /build -->
+		<main id="main">
+			<div class="container">
+				<!-- build:section views.breadcrumbs -->
+				<!-- /build -->
+				<h1><span>My account</span></h1>
+				<div class="tabset">
+					<span class="control">Account information</span>
+					<ul class="tab-controls">
+						<li><a href="#information">Account <br>information</a></li>
+						<li><a href="#password">Change <br>password</a></li>
+						<li><a href="#history">Order <br>history</a></li>
+						<li><a href="#bonus">Bonus <br>rates</a></li>
+						<li class="active"><a href="#whishlist">Whishlist</a></li>
+					</ul>
+					<div id="information" class="tab">
+						<form action="#" method="post" class="account-form">
+							<fieldset>
+								<div class="input">
+									<input type="text" name="name" value="" placeholder="" required>
+									<label>Name Surname <em>*</em></label>
+								</div>
+								<div class="phone-holder">
+									<select name="" id="">
+										<option></option>
+										<option selected>055</option>
+										<option>056</option>
+										<option>057</option>
+									</select>
+									<div class="input">
+										<input type="text" name="phone" value="" placeholder="(___) ___ __ __" required>
+									</div>
+								</div>
+								<div class="input">
+									<input type="email" name="email" value="" placeholder="" required>
+									<label>Email <em>*</em></label>
+								</div>
+								<div class="input select">
+									<select name="" id="">
+										<option></option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+									<label>City <em>*</em></label>
+								</div>
+								<div class="input">
+									<input type="text" name="address" value="" placeholder="" required>
+									<label>Address <em>*</em></label>
+								</div>
+								<div class="row-inline">
+									<label><span>Date of birth</span></label>
+									<div class="input select day">
+										<select name="" id="">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+											<option>60</option>
+											<option>70</option>
+											<option>80</option>
+											<option>90</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+											<option>13</option>
+											<option>14</option>
+											<option>15</option>
+											<option>16</option>
+											<option>17</option>
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+											<option>25</option>
+											<option>26</option>
+											<option>27</option>
+											<option>28</option>
+											<option>29</option>
+											<option>30</option>
+											<option>31</option>
+										</select>
+										<!-- <label>01 <em>*</em></label> -->
+									</div>
+									<div class="input select month">
+										<select name="" id="">
+											<option>January</option>
+											<option>February</option>
+											<option>March</option>
+											<option>April</option>
+											<option>May</option>
+											<option>June</option>
+											<option>July</option>
+											<option>August</option>
+											<option>September</option>
+											<option>October</option>
+											<option>November</option>
+											<option>December</option>
+										</select>
+									</div>
+									<div class="input select year">
+										<select name="" id="">
+											<option>2016</option>
+											<option>2015</option>
+											<option>2014</option>
+											<option>2013</option>
+											<option>2012</option>
+											<option>2011</option>
+											<option>2010</option>
+											<option>2009</option>
+											<option>2008</option>
+											<option>2007</option>
+											<option>2006</option>
+											<option>2005</option>
+										</select>
+									</div>
+								</div>
+								<button class="button upper" type="submit">Save</button>
+							</fieldset>
+						</form>
+					</div>
+					<div id="password" class="tab">
+						<form action="#" method="post" class="account-form">
+							<fieldset>
+								<div class="input">
+									<input type="password" name="old" value="" placeholder="" required>
+									<label>Old Password <em>*</em></label>
+								</div>
+								<div class="input">
+									<input type="password" name="new" value="" placeholder="" required>
+									<label>New Password <em>*</em></label>
+								</div>
+								<div class="input">
+									<input type="password" name="retype" value="" placeholder="" required>
+									<label>Retype New Password <em>*</em></label>
+								</div>
+								<button class="button upper" type="submit">save</button>
+							</fieldset>
+						</form>
+					</div>
+					<div id="history" class="tab">
+						<table class="history size-medium">
+							<thead>
+								<tr>
+									<th>Order number</th>
+									<th>Date</th>
+									<th>Summary</th>
+									<th>Order status</th>
+									<th>Payment status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td data-title="Order number"><a href="#">122321</a></td>
+									<td data-title="Date">21 november 2014</td>
+									<td data-title="Summary">30 AZN</td>
+									<td data-title="Order status">Proceed</td>
+									<td class="waiting" data-title="Payment status">Waiting payment</td>
+								</tr>
+								<tr>
+									<td colspan="5" class="expanded">
+										<div class="two-columns">
+											<div class="column">
+												<dl class="order-info">
+													<dt>Name, surname</dt>
+														<dd>Nariman Asadov</dd>
+													<dt>Phone number</dt>
+														<dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+													<dt>E-mail</dt>
+														<dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+													<dt>City</dt>
+														<dd>Baku</dd>
+													<dt>Address</dt>
+														<dd>Istiglaliyyat str, 12A</dd>
+													<dt>Comment</dt>
+														<dd></dd>
+												</dl>
+												<dl class="order-info">
+													<dt>Order date</dt>
+														<dd>21 november 2015</dd>
+													<dt>Payment</dt>
+														<dd>Online payment</dd>
+													<dt>Payment status</dt>
+														<dd>Paid</dd>
+													<dt>Delivery</dt>
+														<dd>Lorem Ipsum is simply dummy text</dd>
+												</dl>
+											</div>
+											<div class="column">
+												<div class="basket">
+													<table>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+													</table>
+													<div class="total">
+														<div class="col">
+															Your current discount:<br>15%
+														</div>
+														<div class="col">
+															Summary: <br>
+															<strong class="price old-price">60</strong>
+															<strong class="price">30</strong>
+															<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Order number"><a href="#">122321</a></td>
+									<td data-title="Date">21 november 2014</td>
+									<td data-title="Summary">30 AZN</td>
+									<td data-title="Order status">Proceed</td>
+									<td class="paid" data-title="Payment status">Paid</td>
+								</tr>
+								<tr>
+									<td colspan="5" class="expanded">
+										<div class="two-columns">
+											<div class="column">
+												<dl class="order-info">
+													<dt>Name, surname</dt>
+														<dd>Nariman Asadov</dd>
+													<dt>Phone number</dt>
+														<dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+													<dt>E-mail</dt>
+														<dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+													<dt>City</dt>
+														<dd>Baku</dd>
+													<dt>Address</dt>
+														<dd>Istiglaliyyat str, 12A</dd>
+													<dt>Comment</dt>
+														<dd></dd>
+												</dl>
+												<dl class="order-info">
+													<dt>Order date</dt>
+														<dd>21 november 2015</dd>
+													<dt>Payment</dt>
+														<dd>Online payment</dd>
+													<dt>Payment status</dt>
+														<dd>Paid</dd>
+													<dt>Delivery</dt>
+														<dd>Lorem Ipsum is simply dummy text</dd>
+												</dl>
+											</div>
+											<div class="column">
+												<div class="basket">
+													<table class="size-medium">
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+													</table>
+													<div class="total">
+														<div class="col">
+															Your current discount:<br>15%
+														</div>
+														<div class="col">
+															Summary: <br>
+															<strong class="price old-price">60</strong>
+															<strong class="price">30</strong>
+															<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Order number"><a href="#">122321</a></td>
+									<td data-title="Date">21 november 2014</td>
+									<td data-title="Summary">30 AZN</td>
+									<td data-title="Order status">Proceed</td>
+									<td class="canceled" data-title="Payment status">Canceled</td>
+								</tr>
+								<tr>
+									<td colspan="5" class="expanded">
+										<div class="two-columns">
+											<div class="column">
+												<dl class="order-info">
+													<dt>Name, surname</dt>
+														<dd>Nariman Asadov</dd>
+													<dt>Phone number</dt>
+														<dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+													<dt>E-mail</dt>
+														<dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+													<dt>City</dt>
+														<dd>Baku</dd>
+													<dt>Address</dt>
+														<dd>Istiglaliyyat str, 12A</dd>
+													<dt>Comment</dt>
+														<dd></dd>
+												</dl>
+												<dl class="order-info">
+													<dt>Order date</dt>
+														<dd>21 november 2015</dd>
+													<dt>Payment</dt>
+														<dd>Online payment</dd>
+													<dt>Payment status</dt>
+														<dd>Paid</dd>
+													<dt>Delivery</dt>
+														<dd>Lorem Ipsum is simply dummy text</dd>
+												</dl>
+											</div>
+											<div class="column">
+												<div class="basket">
+													<table class="size-medium">
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+													</table>
+													<div class="total">
+														<div class="col">
+															Your current discount:<br>15%
+														</div>
+														<div class="col">
+															Summary: <br>
+															<strong class="price old-price">60</strong>
+															<strong class="price">30</strong>
+															<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Order number"><a href="#">122321</a></td>
+									<td data-title="Date">21 november 2014</td>
+									<td data-title="Summary">30 AZN</td>
+									<td data-title="Order status">Proceed</td>
+									<td class="paid" data-title="Payment status">Paid</td>
+								</tr>
+								<tr>
+									<td colspan="5" class="expanded">
+										<div class="two-columns">
+											<div class="column">
+												<dl class="order-info">
+													<dt>Name, surname</dt>
+														<dd>Nariman Asadov</dd>
+													<dt>Phone number</dt>
+														<dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+													<dt>E-mail</dt>
+														<dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+													<dt>City</dt>
+														<dd>Baku</dd>
+													<dt>Address</dt>
+														<dd>Istiglaliyyat str, 12A</dd>
+													<dt>Comment</dt>
+														<dd></dd>
+												</dl>
+												<dl class="order-info">
+													<dt>Order date</dt>
+														<dd>21 november 2015</dd>
+													<dt>Payment</dt>
+														<dd>Online payment</dd>
+													<dt>Payment status</dt>
+														<dd>Paid</dd>
+													<dt>Delivery</dt>
+														<dd>Lorem Ipsum is simply dummy text</dd>
+												</dl>
+											</div>
+											<div class="column">
+												<div class="basket">
+													<table class="size-medium">
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+													</table>
+													<div class="total">
+														<div class="col">
+															Your current discount:<br>15%
+														</div>
+														<div class="col">
+															Summary: <br>
+															<strong class="price old-price">60</strong>
+															<strong class="price">30</strong>
+															<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td data-title="Order number"><a href="#">122321</a></td>
+									<td data-title="Date">21 november 2014</td>
+									<td data-title="Summary">30 AZN</td>
+									<td data-title="Order status">Proceed</td>
+									<td class="paid" data-title="Payment status">Paid</td>
+								</tr>
+								<tr>
+									<td colspan="5" class="expanded">
+										<div class="two-columns">
+											<div class="column">
+												<dl class="order-info">
+													<dt>Name, surname</dt>
+														<dd>Nariman Asadov</dd>
+													<dt>Phone number</dt>
+														<dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+													<dt>E-mail</dt>
+														<dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+													<dt>City</dt>
+														<dd>Baku</dd>
+													<dt>Address</dt>
+														<dd>Istiglaliyyat str, 12A</dd>
+													<dt>Comment</dt>
+														<dd></dd>
+												</dl>
+												<dl class="order-info">
+													<dt>Order date</dt>
+														<dd>21 november 2015</dd>
+													<dt>Payment</dt>
+														<dd>Online payment</dd>
+													<dt>Payment status</dt>
+														<dd>Paid</dd>
+													<dt>Delivery</dt>
+														<dd>Lorem Ipsum is simply dummy text</dd>
+												</dl>
+											</div>
+											<div class="column">
+												<div class="basket">
+													<table class="size-medium">
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+														<tr>
+															<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+															<td>
+																<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+																<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+																<strong class="price">19</strong>
+															</td>
+															<td>
+																<span class="title">Quantity</span>
+																<span class="quantity">7</span>
+															</td>
+															<td>
+																<span class="title">Summary</span>
+																<strong class="price">133</strong>
+															</td>
+														</tr>
+													</table>
+													<div class="total">
+														<div class="col">
+															Your current discount:<br>15%
+														</div>
+														<div class="col">
+															Summary: <br>
+															<strong class="price old-price">60</strong>
+															<strong class="price">30</strong>
+															<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="bonus" class="tab">
+						<h3><b>Cumulative discount</b></h3>
+						<dl class="bonuses">
+							<dt>Cost of purchased goods:</dt>
+								<dd>340 AZN</dd>
+							<dt>Your current discount:</dt>
+								<dd>15%</dd>
+						</dl>
+						<div class="next-discount"><span>For the next 20% discount sum needed to purchase: <b>1000 AZN</b></span></div>
+						<a href="#" class="all-discounts fa fa-list-alt"><span>The list of discounts</span></a>
+						<hr>
+						<h3><b>Bonus rates</b></h3>
+						<dl class="bonuses">
+							<dt>Cost of purchased goods:</dt>
+								<dd>340 AZN</dd>
+						</dl>
+						<div class="next-discount"><span>To get new perfume needed to purchase: <b class="fa fa-gift">+2000 bonus</b></span></div>
+					</div>
+					<div id="whishlist" class="tab active">
+						<div class="product-list wishes">
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option selected value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">24 reviews</a>
+								<footer>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">156</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option selected value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">99 reviews</a>
+								<footer>
+									<a data-popup="on" href="_inc/report.html" class="button blue">Report an arrival</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img03.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water Dahli Divine El Passo del Tracho</a></strong>
+								<strong class="price">16</strong>
+								<select class="rating" data-readOnly="true">
+									<option value=""></option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">0 reviews</a>
+								<footer>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img04.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option selected value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">24 reviews</a>
+								<footer>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option selected value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">24 reviews</a>
+								<footer>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option selected value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">99 reviews</a>
+								<footer>
+									<a href="#" class="added favorite-button fa fa-heart-o" aria-hidden="true"></a>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img03.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water Dahli Divine El Passo del Tracho</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value=""></option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">0 reviews</a>
+								<footer>
+									<a href="#" class="button upper">BUY</a>
+								</footer>
+							</div>
+							<div class="item">
+								<a href="#" class="delete"><span></span>Delete</a>
+								<a href="#" class="visual"><img src="images/product/img04.jpg" width="220" height="293" alt="image description" /></a>
+								<strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+								<strong class="price">56</strong>
+								<select class="rating" data-readOnly="true">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option selected value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<a class="count-reviews" href="#">24 reviews</a>
+								<footer>
+									<a data-popup="on" href="_inc/report.html" class="button blue">Report an arrival</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- build:section layout.footer -->
+		<!-- /build -->
+	</div>
+</body>
+</html>

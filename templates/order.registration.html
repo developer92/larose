@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<!-- build:section layout.head -->
+<!-- /build -->
+<body>
+	<div id="svg-icon-placeholder" style="display: none;"></div>
+	<div id="wrapper">
+		<!-- build:section layout.header -->
+		<!-- /build -->
+		<main id="main">
+			<div class="container">
+				<!-- build:section views.breadcrumbs -->
+				<!-- /build -->
+				<h1><span>Order login</span></h1>
+				<form action="#" method="post" class="order">
+					<fieldset>
+						<nav class="order-menu">
+							<ul>
+								<li class="active"><a href="#">I am a new user</a></li>
+								<li><a href="#">I have already registered</a></li>
+							</ul>
+						</nav>
+						<div class="column">
+							<div class="step">
+								<strong class="title"><i class="fa fa-user" aria-hidden="true"></i>PERSONAL INFORMATION</strong>
+								<div class="input">
+									<input type="text" name="name" value="" placeholder="" required>
+									<label>Name Surname <em>*</em></label>
+								</div>
+								<div class="phone-holder">
+									<select name="" id="">
+										<option></option>
+										<option selected>055</option>
+										<option>056</option>
+										<option>057</option>
+									</select>
+									<div class="input">
+										<input type="text" name="phone" value="" placeholder="(___) ___ __ __" required>
+									</div>
+								</div>
+								<div class="input">
+									<input type="email" name="email" value="" placeholder="" required>
+									<label>Email <em>*</em></label>
+								</div>
+								<div class="input">
+									<input type="password" name="" value="" placeholder="" required>
+									<label>Password <em>*</em></label>
+								</div>
+							</div>
+							<div class="step">
+								<strong class="title"><i class="fa fa-truck" aria-hidden="true"></i>Delivery</strong>
+								<div class="input select">
+									<select name="" id="">
+										<option></option>
+										<option>City 1</option>
+										<option>City 2</option>
+										<option>City 3</option>
+									</select>
+									<label>City <em>*</em></label>
+								</div>
+								<div class="input">
+									<input type="text" name="address" value="" placeholder="" required>
+									<label>Address <em>*</em></label>
+								</div>
+							</div>
+							<div class="step">
+								<strong class="title"><i class="fa fa-money" aria-hidden="true"></i>payment</strong>
+								<label class="radio-holder">
+									<i class="fa fa-circle-o" aria-hidden="true"></i>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i>
+									<input type="radio" name="payment" value="" placeholder="">
+									Online payment
+								</label>
+								<label class="radio-holder">
+									<i class="fa fa-circle-o" aria-hidden="true"></i>
+									<i class="fa fa-circle-thin" aria-hidden="true"></i>
+									<input checked type="radio" name="payment" value="" placeholder="">
+									Cash - Pay at home
+								</label>
+							</div>
+							<dl class="total">
+								<dt>Your current discount:</dt>
+								<dd><strong>15%</strong></dd>
+								<dt>Total:</dt>
+								<dd>
+									<strong class="price old-price">440</strong>
+									<strong class="price">330</strong>
+									<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+								</dd>
+							</dl>
+							<button type="submit" class="button upper red fullwidth">order</button>
+						</div>
+						<div style="padding-top: 65px;" class="column">
+							<div class="basket">
+								<table class="size-medium">
+									<tr>
+										<td class="middle"><a href="#" class="delete"><span></span>Delete</a></td>
+										<td class="middle"><a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a></td>
+										<td>
+											<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+											<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+											<strong class="price">19</strong>
+										</td>
+										<td>
+											<span class="title">Quantity</span>
+											<span class="quantity">7</span>
+										</td>
+										<td>
+											<span class="title">Summary</span>
+											<strong class="price">133</strong>
+										</td>
+									</tr>
+									<tr>
+										<td class="middle"><a href="#" class="delete"><span></span>Delete</a></td>
+										<td class="middle"><a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a></td>
+										<td>
+											<a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+											<span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+											<strong class="price">19</strong>
+										</td>
+										<td>
+											<span class="title">Quantity</span>
+											<span class="quantity">7</span>
+										</td>
+										<td>
+											<span class="title">Summary</span>
+											<strong class="price">133</strong>
+										</td>
+									</tr>
+								</table>
+								<div class="total">
+									<div class="col">
+										Your current discount:<br>15%
+									</div>
+									<div class="col">
+										Summary: <br>
+										<strong class="price old-price">60</strong>
+										<strong class="price">30</strong>
+										<span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+		<!-- build:section layout.footer -->
+		<!-- /build -->
+	</div>
+</body>
+</html>

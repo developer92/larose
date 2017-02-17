@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="&apos;Dialog&apos;" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'MANAT SIGN' (U+20BC)-->
+  <defs id="genericDefs" />
+  <g>
+    <g>
+      <path d="M226.5469 288 L200.1094 288 Q200.1094 199.2656 161.7188 167.9062 Q146.9531 155.8125 130.6406 153.8438 L131.7656 272.5312 L105.6094 283.5 L108.8438 153.9844 Q94.0781 154.8281 79.0312 167.625 Q65.9531 178.875 58.3594 193.9219 Q41.9062 226.4062 39.0938 288 L12.6562 288 Q13.0781 235.5469 35.7188 191.6719 Q62.7188 139.5 108.9844 131.625 L108.9844 108.5625 L129.375 102.5156 L129.375 132.4688 Q144.8438 133.3125 160.7344 142.5938 Q192.6562 161.2969 210.7969 206.5781 Q226.2656 245.3906 226.5469 288 Z" stroke="none" />
+    </g>
+  </g>
+</svg>

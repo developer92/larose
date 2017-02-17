@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaRose</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/svg-sprites.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js" defer><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery.plugins.js" defer></script>
+    <script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
+
+<body>
+    <div id="svg-icon-placeholder" style="display: none;"></div>
+    <div id="wrapper">
+        <div id="panel">
+            <div class="container">
+                <a href="#" class="mobile-menu"><span></span></a>
+                <ul class="phones">
+                    <li><a href="tel:+994125057090"><i class="fa fa-phone" aria-hidden="true"></i>+994 12 505 70 90</a></li>
+                    <li><a href="tel:+994508906090"><i class="fa fa-whatsapp" aria-hidden="true"></i>+994 50 890 60 90</a></li>
+                    <li class="mobile-search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
+                </ul>
+                <div class="language">
+                    <span>Ru<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li class="active"><a href="#">Ru</a></li>
+                        <li><a href="#">Az</a></li>
+                        <li><a href="#">En</a></li>
+                    </ul>
+                </div>
+                <ul class="panel-controls">
+                    <li><a data-popup="on" href="_inc/basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Basket <span>0</span></a></li>
+                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Favourites <span>0</span></a></li>
+                    <li><a data-popup="on" href="_inc/login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container">
+                <div class="holder">
+                    <a data-popup="on" href="_inc/filter.html" class="filter-button">Smart <br> Perfume Filter</a>
+                    <a href="#" class="search-button"><i class="fa fa-search" aria-hidden="true"></i>Search fregrance</a>
+                    <strong class="logo"><a href="#">Larose.az</a></strong>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li>
+                            <a href="#">about us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">How to order</a></li>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Bonuses</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">blog</a></li>
+                        <li>
+                            <a href="#">support<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">How to order</a></li>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Bonuses</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <a href="#" class="back"><i class="fa fa-reply" aria-hidden="true"></i>Back</a>
+                    <div class="mobile-contacts">
+                        <ul>
+                            <li><a href="tel:+994125057090"><i class="fa fa-phone" aria-hidden="true"></i>+994 12 505 70 90</a></li>
+                            <li><a href="tel:+994508906090"><i class="fa fa-whatsapp" aria-hidden="true"></i>+994 50 890 60 90</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-language">
+                        <ul>
+                            <li class="active"><a href="#">Ru</a></li>
+                            <li><a href="#">Az</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <form action="#" method="post" class="search">
+                <fieldset>
+                    <div class="container">
+                        <a href="#" class="close">close</a>
+                        <strong class="h1">search</strong>
+                        <div class="input">
+                            <input type="search" name="" value="" placeholder="Your Fregrance">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </header>
+        <div class="brands-panel">
+            <div class="container">
+                <ul class="brands-list">
+                    <li><a href="#"><span>all brands</span></a></li>
+                    <li><a href="#">#</a></li>
+                    <li><a href="#">0-9</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                    <li><a href="#">f</a></li>
+                    <li>
+                        <a href="#">g</a>
+                        <div class="drop">
+                            <strong class="letter">G</strong>
+                            <ul>
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li>&nbsp;</li>
+                                <li class="all"><a href="#">View all<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">h</a></li>
+                    <li><a href="#">i</a></li>
+                    <li><a href="#">j</a></li>
+                    <li><a href="#">k</a></li>
+                    <li><a href="#">l</a></li>
+                    <li><a href="#">m</a></li>
+                    <li><a href="#">n</a></li>
+                    <li><a href="#">o</a></li>
+                    <li><a href="#">p</a></li>
+                    <li><a href="#">q</a></li>
+                    <li><a href="#">r</a></li>
+                    <li><a href="#">s</a></li>
+                    <li><a href="#">t</a></li>
+                    <li><a href="#">u</a></li>
+                    <li><a href="#">v</a></li>
+                    <li><a href="#">w</a></li>
+                    <li><a href="#">x</a></li>
+                    <li><a href="#">y</a></li>
+                    <li><a href="#">z</a></li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Larose.az</a></li>
+                        <li>Perfume for Men</li>
+                    </ul>
+                </nav>
+                <h1><span>Gerard Depardieu<sup>243 products</sup></span></h1>
+                <div class="perfumer">
+                    <div class="visual"><img src="images/perfumer.jpg" width="100" height="100" alt="image description" /></div>
+                    <div class="scroll size-medium">
+                        <div class="scroll-holder">
+                            <div class="scroll-frame">
+                                <p>Experiencing Dark Aoud by Montale in its initial stages is akin to walking into a pitch-black room. Just as it takes a while for your eyes to adjust in order to discern the shapes, sizes, and nuances of the objects initially
+                                    hidden in darkness, so too does it take time to realize that Dark Oud is more than a linear oud. </p>
+                                <p>A minimalist exploration of two powerful accords — oud and sandalwood — Dark Aoud starts out with the smoky, camphoraceous, medicinal aspect of oud on display, accompanied by a dry and elegant sandalwood. A sweeter, softer,
+                                    and rounder sandalwood comes forth from its initial asceticism, rounding out the oud note's inky darkness and revealing its soft, even powdery spiciness. Although Dark Aoud gets softer through its long dry down, it
+                                    remains an intense and mysterious <a href="#">presence</a> on your skin. Experiencing Dark Aoud by Montale in its initial stages is akin to walking into a pitch-black room. Just as it takes a while for your eyes to
+                                    adjust in order to discern the shapes, sizes, and nuances of the objects initially hidden in darkness, so too does it take time to realize that Dark Oud is more than a linear oud.</p>
+                                <p>Experiencing Dark Aoud by Montale in its initial stages is akin to walking into a pitch-black room. Just as it takes a while for your eyes to adjust in order to discern the shapes, sizes, and nuances of the objects initially
+                                    hidden in darkness, so too does it take time to realize that Dark Oud is more than a linear oud. </p>
+                                <p>A minimalist exploration of two powerful accords — oud and sandalwood — Dark Aoud starts out with the smoky, camphoraceous, medicinal aspect of oud on display, accompanied by a dry and elegant sandalwood. A sweeter, softer,
+                                    and rounder sandalwood comes forth from its initial asceticism, rounding out the oud note's inky darkness and revealing its soft, even powdery spiciness. Although Dark Aoud gets softer through its long dry down, it
+                                    remains an intense and mysterious <a href="#">presence</a> on your skin.Experiencing Dark Aoud by Montale in its initial stages is akin to walking into a pitch-black room. Just as it takes a while for your eyes to adjust
+                                    in order to discern the shapes, sizes, and nuances of the objects initially hidden in darkness, so too does it take time to realize that Dark Oud is more than a linear oud.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <aside id="sidebar">
+                    <a href="#" class="mobile-filter">
+                        <i class="fa fa-sliders" aria-hidden="true"></i>
+                        <i class="fa fa-reply" aria-hidden="true"></i>
+                    </a>
+                    <form action="#" method="post" class="filter">
+                        <fieldset>
+                            <div class="choosed">
+                                <strong class="title">You choosed:</strong>
+                                <button type="reset">Clear all</button>
+                                <ul>
+                                    <li><a href="#">For men<span></span></a></li>
+                                    <li><a href="#">Gucci<span></span></a></li>
+                                    <li><a href="#">Wooden<span></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-holder">
+                                <h4>Price filter</h4>
+                                <div class="slider-range">
+                                    <input class="min" type="text" value="1940">
+                                    <span>&mdash;</span>
+                                    <input class="max" type="text" value="3685">
+                                    <strong class="price"></strong>
+                                    <div class="slider"></div>
+                                </div>
+                                <h4>Gender</h4>
+                                <div class="scroll">
+                                    <div class="scroll-holder">
+                                        <div class="scroll-frame">
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							For men (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							For women (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Unisex (67)
+						</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Brands</h4>
+                                <input class="filter-input" type="text">
+                                <div class="scroll">
+                                    <div class="scroll-holder">
+                                        <div class="scroll-frame">
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							212 (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Adidas (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Agent 007 (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Baldosalini (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Burbderry (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input checked type="checkbox" name="" value="">
+							Chanel (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Agent 007 (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Baldosalini (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							212 (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Adidas (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Agent 007 (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Baldosalini (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Burbderry (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Chanel (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Agent 007 (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Baldosalini (234)
+						</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>notes</h4>
+                                <input class="filter-input" type="text">
+                                <div class="scroll">
+                                    <div class="scroll-holder">
+                                        <div class="scroll-frame">
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Bergamot (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Jasmeen (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Oud (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Lavender (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Bergamot (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Jasmeen (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Oud (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Lavender (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Bergamot (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Jasmeen (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Oud (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Lavender (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Bergamot (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Jasmeen (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Oud (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Lavender (234)
+						</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Quantity</h4>
+                                <div class="scroll">
+                                    <div class="scroll-holder">
+                                        <div class="scroll-frame">
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							30 ml (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							50 ml (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							100 ml007 (67)
+						</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Parfume group</h4>
+                                <div class="scroll">
+                                    <div class="scroll-holder">
+                                        <div class="scroll-frame">
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Citrus (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Wooden (432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Fruit (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Hot (234)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Dark(432)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Light (67)
+						</label>
+                                            <label class="check-holder">
+							<i class="fa fa-square-o" aria-hidden="true"></i>
+							<i class="fa fa-check-square-o" aria-hidden="true"></i>
+							<input type="checkbox" name="" value="">
+							Exotic (67)
+						</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="ads">
+                        <a href="#"><img src="images/ads.jpg" width="260" height="260" alt="image description" /></a>
+                    </div>
+                </aside>
+                <section id="content">
+                    <form action="#" method="post" class="sort">
+                        <fieldset>
+                            <strong class="title">Sort by:</strong>
+                            <ul class="sort-type">
+                                <li><a href="#">price<i class="fa fa-long-arrow-up" aria-hidden="true"></i><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+                                <li class="sorting_asc"><a href="#">popularity<i class="fa fa-long-arrow-up" aria-hidden="true"></i><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+                                <!-- sorting_desc -->
+                                <li><a href="#">name<i class="fa fa-long-arrow-up" aria-hidden="true"></i><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a></li>
+                            </ul>
+                            <strong class="title">Show on page:</strong>
+                            <select>
+			<option>18</option>
+			<option>40</option>
+			<option>60</option>
+			<option>80</option>
+			<option>View all<i class="fa fa-caret-right" aria-hidden="true"></i></option>
+		</select>
+                            <ul class="view">
+                                <li class="active">
+                                    <a class="fa fa-th" aria-hidden="true" href="#"></a>
+                                </li>
+                                <li>
+                                    <a class="fa fa-list" aria-hidden="true" href="#"></a>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <div class="product-list">
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option selected value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">24 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">156</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option selected value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">99 reviews</a>
+                            <footer>
+                                <a href="#" class="added favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img03.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water Dahli Divine El Passo del Tracho</a></strong>
+                            <strong class="price">16</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value=""></option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">0 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img04.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option selected value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">24 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option selected value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">24 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option selected value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">99 reviews</a>
+                            <footer>
+                                <a href="#" class="added favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img03.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water Dahli Divine El Passo del Tracho</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value=""></option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">0 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img04.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option selected value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">24 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                        <div class="item">
+                            <a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description" /></a>
+                            <strong class="name"><a href="#">Dolce &amp; Gabbana Cool Water</a></strong>
+                            <strong class="price">56</strong>
+                            <select class="rating" data-readOnly="true">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option selected value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+                            <a class="count-reviews" href="#">24 reviews</a>
+                            <footer>
+                                <a href="#" class="favorite-button fa fa-heart-o" aria-hidden="true"></a>
+                                <a href="#" class="button upper">BUY</a>
+                            </footer>
+                        </div>
+                    </div>
+                    <nav class="pagination">
+                        <ul>
+                            <li>
+                                <a class="fa fa-chevron-left" aria-hidden="true" href="#"></a>
+                            </li>
+                            <li><a href="#">First</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">12</a></li>
+                            <li><a href="#">Last</a></li>
+                            <li>
+                                <a class="fa fa-chevron-right" aria-hidden="true" href="#"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </main>
+        <div class="bottom-info">
+            <div class="container feed-block">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-google"></a>
+                    </li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form">
+                    <fieldset>
+                        <label>subscribe and get <b>15% discount</b></label>
+                        <div class="input-control">
+                            <input type="email" name="email" placeholder="Type your mail">
+                        </div>
+                        <button data-popup="on" data-href="_inc/subscribe.html" type="submit" class="button upper">subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container size-medium">
+                <h3><b>Perfumery in Baku, Azerbaijan</b></h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                <p>Quis autem vel <br>eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <ul class="list">
+                    <li>Nemo enim ipsam voluptatem</li>
+                    <li>Quia voluptas sit aspernatur aut </li>
+                    <li>Odit aut fugit, sed quia </li>
+                    <li>Consequuntur magni dolores </li>
+                    <li>Eos qui ratione voluptatem sequi nesciunt. </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="menu">
+                    <div class="col">
+                        <span class="title">Products<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">Perfume</a></li>
+                            <li><a href="#">Perfume for women</a></li>
+                            <li><a href="#">Perfume for men</a></li>
+                            <li><a href="#">Unisex perfumes</a></li>
+                            <li><a href="#">All perfume brands</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">SUPPORT<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Free shipping</a></li>
+                            <li><a href="#">Safety payment</a></li>
+                            <li><a href="#">Original product</a></li>
+                            <li><a href="#">Cash on delivery</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">ABOUT US<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">About Aromania</a></li>
+                            <li><a href="#">Certificates</a></li>
+                            <li><a href="#">Mission and vision</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">USER PROFILE<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a class="call-popup" href="ajax/login.html">Login</a></li>
+                            <li><a class="call-popup" href="ajax/registration.html">Register</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">our COntacts<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="tel:+994125053650" class="fa fa-phone">(+ 994 12) 505 36 50</a></li>
+                            <li><a href="whatsapp://send?text=Hello%20World!" class="fa fa-whatsapp">(+ 994 55) 859 77 77</a></li>
+                            <li><a href="mailto:sales@larose.az" class="fa fa-envelope">sales@larose.az</a></li>
+                            <li><a data-popup="on" class="fa fa-reply" href="_inc/callback.html">Call back</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <strong class="logo"><a href="#">LaRose</a></strong>
+                <div class="foot-bottom">
+                    <ul>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <em class="copyright">Larose.az 2016 © All rigths reserved. Site created by <a href="#"><strong>ONE Studio</strong></a></em>
+                </div>
+            </div>
+        </footer>
+        <div class="quick-buttons">
+            <a href="tel:+994125053650"><i class="fa fa-phone" aria-hidden="true"></i>Call now</a>
+            <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>Viber now</a>
+        </div>
+    </div>
+</body>
+
+</html>
