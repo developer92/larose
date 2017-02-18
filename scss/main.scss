@@ -452,10 +452,10 @@ $media-expressions: (
 }
 
 .quick-buttons {
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 100px;
   z-index: 90;
   text-align: center;
   display: none;
@@ -1064,6 +1064,7 @@ $media-expressions: (
   }
   li {
     margin: 0 0 11px;
+    span {font-family: $base-font-sans-serif;}
   }
   a {
     color: white;
@@ -1627,7 +1628,14 @@ $media-expressions: (
       height: 60%;
     }
     @include media('<phone') {
-      display: none;
+      opacity: 1;
+      float: none;
+      position: static;
+      display: block;
+      width: 100%;
+      height: 300px;
+      margin: 30px 0 15px;
+      background-position: 50%;
     }
   }
   @include media('<phone') {
@@ -4119,7 +4127,7 @@ ol {
 }
 
 .popup {
-  position: absolute !important;
+  position: absolute;
   background-color: white;
   .button:not(.social) {font-weight: 900;}
   .popup-title {

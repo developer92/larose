@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
 	if ('mask' in $.fn) {
 		$('.tel-number').mask('+994 (00) 000 - 00 - 00');
-		$('.phone-holder input').mask('(000) 000 00 00');
+		$('.phone-holder input').mask('000 00 00');
 	}
 });
 
@@ -297,6 +297,10 @@ function initSly() {
 	if ('sly' in $.fn) {
 		$frame = $('.sly .sly-holder');
 		$frame2 = $('.scroll .scroll-holder');
+
+		var _cycle = 0,
+			_interval = 0;
+
 		$frame.each(function() {
 			var _this = $(this);
 			var $wrap = $(this).parent();
@@ -314,6 +318,11 @@ function initSly() {
 			if (_listW > _thisW) $wrap.addClass('init');
 			else $wrap.removeClass('init');
 
+			if ($wrap.is('[data-cycle]')) {
+				_cycle = 'pages';
+				_interval = parseInt($wrap.data('interval'));
+			}
+
 			$(this).sly({
 				horizontal: 1,
 				smart: 1,
@@ -321,8 +330,8 @@ function initSly() {
 				touchDragging: 1,
 				releaseSwing: 1,
 				startAt: 0,
-				cycleBy: 0,
-				cycleInterval: 0,
+				cycleBy: _cycle,
+				cycleInterval: _interval,
 				scrollBar: $wrap.find('.scrollbar'),
 				activatePageOn: 'click',
 				scrollBy: 0,
@@ -396,7 +405,6 @@ function initSly() {
 }
 
 function initRating() {
-
 	$('.rating').each(function(index, el) {
 		var _this = $(this),
 			_readOnly = false;
@@ -449,7 +457,7 @@ function initBgImage() {
 function initAutocomplete() {
 	$('.search-button, .mobile-search a').click(function(event) {
 		event.preventDefault();
-		$('.search input').val('');
+		$('.search input').val('').focus();
 		$('.search').toggleClass('show');
 	});
 	$('.search .close').click(function(event) {
@@ -585,6 +593,8 @@ function initPopups() {
 			wrapCSS: 'popup ' + _class,
 			href: _url,
 			padding: 0,
+			fixed: false,
+			autoCenter: false,
 			margin: _margin,
 			minWidth: 370,
 			maxWidth: 1020,
