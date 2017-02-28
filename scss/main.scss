@@ -1246,7 +1246,14 @@ $media-expressions: (
     margin-bottom: 8px;
     position: relative;
     z-index: 2;
-    img {vertical-align: top;}
+    height: 293px;
+    @include v-align;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
   .name {
     display: block;

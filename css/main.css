@@ -2970,9 +2970,26 @@ input[type='submit'] {
     display: block;
     margin-bottom: 8px;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    height: 293px;
+    white-space: nowrap;
+    text-align: center; }
+    .product-list .visual:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      min-height: 100%;
+      margin-left: -4px; }
+    .product-list .visual > * {
+      white-space: normal;
+      display: inline-block;
+      vertical-align: middle; }
     .product-list .visual img {
-      vertical-align: top; }
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%; }
   .product-list .name {
     display: block;
     font-weight: normal;

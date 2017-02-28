@@ -532,28 +532,27 @@ function initSelect() {
 }
 
 function initInput() {
+	var defaultVal = '';
 	$('.input input, .input textarea').focus(function(event) {
 		$(this).closest('.input').addClass('focus');
 	}).blur(function(event) {
 		$(this).closest('.input').removeClass('focus');
-		var actionVal = $(this).val(),
-			defaultVal = this.defaultValue;
+		var actionVal = $(this).val();
 		if (actionVal != defaultVal) $(this).closest('.input').addClass('enter');
 		else $(this).closest('.input').removeClass('enter');
 	}).keyup(function(event) {
-		var actionVal = $(this).val(),
-			defaultVal = this.defaultValue;
+		var actionVal = $(this).val();
 		if (actionVal != defaultVal) $(this).closest('.input').addClass('enter');
 		else $(this).closest('.input').removeClass('enter');
 	}).change(function(event) {
-		var actionVal = $(this).val(),
-			defaultVal = this.defaultValue;
+		var actionVal = $(this).val();
 		if (actionVal != defaultVal) $(this).closest('.input').addClass('enter');
 		else $(this).closest('.input').removeClass('enter');
 		$(this).blur();
 	});
 	$('.input input, .input textarea').each(function(index, el) {
-		if ($(this).val() != '' && !$(this).is(':hidden')) $(this).closest('.input').addClass('enter');
+		if($(this).val() != '') $(this).closest('.input').addClass('enter');
+		else $(this).closest('.input').removeClass('enter');
 	});
 	autosize($('textarea'));
 }
