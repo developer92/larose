@@ -5115,23 +5115,31 @@ input[type='submit'] {
   .brand-item .pic {
     width: 100%;
     height: 166px;
-    line-height: 166px;
     margin: 0 0 12px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    text-align: center;
     -webkit-transition: box-shadow 0.2s ease-in-out;
             transition: box-shadow 0.2s ease-in-out; }
+    .brand-item .pic:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      min-height: 100%;
+      margin-left: -4px; }
+    .brand-item .pic > * {
+      white-space: normal;
+      display: inline-block;
+      vertical-align: middle; }
     @media (max-width: 767px) {
       .brand-item .pic {
         height: 70px;
-        line-height: 70px;
         margin-bottom: 6px; } }
-  .brand-item img {
-    display: inline-block;
-    vertical-align: middle; }
-    @media (max-width: 767px) {
-      .brand-item img {
-        max-width: 70%;
-        max-height: 70%; } }
+  @media (max-width: 767px) {
+    .brand-item img {
+      max-width: 70%;
+      max-height: 70%; } }
   .brand-item .name {
     display: block; }
 

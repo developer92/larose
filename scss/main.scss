@@ -3572,19 +3572,16 @@ $media-expressions: (
   .pic {
     width: 100%;
     height: 166px;
-    line-height: 166px;
     margin: 0 0 12px;
     border: 1px solid black(.1);
+    @include v-align;
     transition: box-shadow $animation-speed ease-in-out;
     @include media('<phone') {
       height: 70px;
-      line-height: 70px;
       margin-bottom: 6px;
     }
   }
   img {
-    display: inline-block;
-    vertical-align: middle;
     @include media('<phone') {
       max-width: 70%;
       max-height: 70%;
