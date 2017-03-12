@@ -613,7 +613,20 @@ function initPopups() {
 				}
 			},
 			beforeShow: function(current, previous) {
-				initCheck();
+				if ('icheck' in $.fn) {
+					$('.popup input').icheck({
+						checkboxClass: 'switch',
+						radioClass: 'radio',
+						increaseArea: '20%'
+					});
+				}
+				$('.popup input').each(function(index, el) {
+					if ($(this).is(':checked')) $(this).closest('label').addClass('checked');
+					else if ($(this).is(':disabled')) $(this).closest('label').addClass('disabled');
+				});
+				$('.popup input').on('ifToggled', function(event) {
+					$(this).closest('label').toggleClass('checked');
+				});
 				initSelect();
 				initInput();
 				initBgImage();
