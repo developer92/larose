@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaRose</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link media="all" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/svg-sprites.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('svg-icon-placeholder').innerHTML += SVG_SPRITES['sprite'];
+        }, false);
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js" defer><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery.plugins.js" defer></script>
+    <script type="text/javascript" src="js/jquery.main.js" defer></script>
+</head>
+
+<body>
+    <div id="svg-icon-placeholder" style="display: none;"></div>
+    <div id="wrapper">
+        <div id="panel">
+            <div class="container">
+                <a href="#" class="mobile-menu"><span></span></a>
+                <ul class="phones">
+                    <li><a href="tel:+994125057090"><i class="fa fa-phone" aria-hidden="true"></i>+994 12 505 70 90</a></li>
+                    <li><a href="tel:+994508906090"><i class="fa fa-whatsapp" aria-hidden="true"></i>+994 50 890 60 90</a></li>
+                    <li class="mobile-search"><a href="#"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
+                </ul>
+                <div class="language">
+                    <span>Ru<i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    <ul>
+                        <li class="active"><a href="#">Ru</a></li>
+                        <li><a href="#">Az</a></li>
+                        <li><a href="#">En</a></li>
+                    </ul>
+                </div>
+                <ul class="panel-controls">
+                    <li><a data-popup="on" href="_inc/basket.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Basket <span>0</span></a></li>
+                    <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Favourites <span>0</span></a></li>
+                    <li><a data-popup="on" href="_inc/login.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container">
+                <div class="holder">
+                    <a data-popup="on" href="_inc/filter.html" class="filter-button">Smart <br> Perfume Filter</a>
+                    <a href="#" class="search-button"><i class="fa fa-search" aria-hidden="true"></i>Search fregrance</a>
+                    <strong class="logo"><a href="#">Larose.az</a></strong>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">Unisex</a></li>
+                        <li>
+                            <a href="#">about us<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">How to order</a></li>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Bonuses</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">blog</a></li>
+                        <li>
+                            <a href="#">support<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">How to order</a></li>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Bonuses</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">contact us</a></li>
+                    </ul>
+                    <a href="#" class="back"><i class="fa fa-reply" aria-hidden="true"></i>Back</a>
+                    <div class="mobile-contacts">
+                        <ul>
+                            <li><a href="tel:+994125057090"><i class="fa fa-phone" aria-hidden="true"></i>+994 12 505 70 90</a></li>
+                            <li><a href="tel:+994508906090"><i class="fa fa-whatsapp" aria-hidden="true"></i>+994 50 890 60 90</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-language">
+                        <ul>
+                            <li class="active"><a href="#">Ru</a></li>
+                            <li><a href="#">Az</a></li>
+                            <li><a href="#">En</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick-buttons">
+                        <a href="tel:+994125053650"><i class="fa fa-phone" aria-hidden="true"></i>Call now</a>
+                        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>Viber now</a>
+                    </div>
+                </nav>
+            </div>
+            <form action="#" method="post" class="search">
+                <fieldset>
+                    <div class="container">
+                        <a href="#" class="close">close</a>
+                        <strong class="h1">search</strong>
+                        <div class="input">
+                            <input type="search" name="" value="" placeholder="Your Fregrance">
+                            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </header>
+        <div class="brands-panel">
+            <div class="container">
+                <ul class="brands-list">
+                    <li><a href="#"><span>all brands</span></a></li>
+                    <li><a href="#">#</a></li>
+                    <li><a href="#">0-9</a></li>
+                    <li><a href="#">a</a></li>
+                    <li><a href="#">b</a></li>
+                    <li><a href="#">c</a></li>
+                    <li><a href="#">d</a></li>
+                    <li><a href="#">e</a></li>
+                    <li><a href="#">f</a></li>
+                    <li>
+                        <a href="#">g</a>
+                        <div class="drop">
+                            <strong class="letter">G</strong>
+                            <ul>
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li><a href="#">Gucci</a></li>
+                                <li><a href="#">Guerlain</a></li>
+
+                                <li><a href="#">Giorgio Armani</a></li>
+                                <li><a href="#">Givenchy</a></li>
+                                <li>&nbsp;</li>
+                                <li class="all"><a href="#">View all<i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">h</a></li>
+                    <li><a href="#">i</a></li>
+                    <li><a href="#">j</a></li>
+                    <li><a href="#">k</a></li>
+                    <li><a href="#">l</a></li>
+                    <li><a href="#">m</a></li>
+                    <li><a href="#">n</a></li>
+                    <li><a href="#">o</a></li>
+                    <li><a href="#">p</a></li>
+                    <li><a href="#">q</a></li>
+                    <li><a href="#">r</a></li>
+                    <li><a href="#">s</a></li>
+                    <li><a href="#">t</a></li>
+                    <li><a href="#">u</a></li>
+                    <li><a href="#">v</a></li>
+                    <li><a href="#">w</a></li>
+                    <li><a href="#">x</a></li>
+                    <li><a href="#">y</a></li>
+                    <li><a href="#">z</a></li>
+                </ul>
+            </div>
+        </div>
+        <main id="main">
+            <div class="container">
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Larose.az</a></li>
+                        <li>Perfume for Men</li>
+                    </ul>
+                </nav>
+                <h1><span>Order result</span></h1>
+                <div class="order-results">
+                    <p>Dear Nariman Asadov,</p>
+                    <p>Thank you for choosing us we hope lorem ipsumLorem ipsum dolor sit amet, consectetur adipisicing elit, sed r in reprehendo quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                        modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>Discover your smell with Aromania.az!</p>
+                </div>
+                <div class="results">
+                    <div class="column size-medium">
+                        <dl class="order-info">
+                            <dt>Name, surname</dt>
+                            <dd>Nariman Asadov</dd>
+                            <dt>Phone number</dt>
+                            <dd><a href="tel:+994554752400">+994 55 475 24 00</a></dd>
+                            <dt>E-mail</dt>
+                            <dd><a href="mailto:nariman@gmail.com">nariman@gmail.com</a></dd>
+                            <dt>City</dt>
+                            <dd>Baku</dd>
+                            <dt>Address</dt>
+                            <dd>Istiglaliyyat str, 12A</dd>
+                            <dt>Comment</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl class="order-info">
+                            <dt>Order date</dt>
+                            <dd>21 november 2015</dd>
+                            <dt>Payment</dt>
+                            <dd>Online payment</dd>
+                            <dt>Payment status</dt>
+                            <dd>Paid</dd>
+                            <dt>Delivery</dt>
+                            <dd>Lorem Ipsum is simply dummy text</dd>
+                        </dl>
+                        <a onClick="window.print();return false" href="#" class="button red">PRINT</a>
+                    </div>
+                    <div class="column">
+                        <div class="basket">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="middle">
+                                            <a href="#" class="visual"><img src="images/product/img01.jpg" width="220" height="293" alt="image description"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+                                            <span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+                                            <strong class="price">19</strong>
+                                        </td>
+                                        <td>
+                                            <span class="title">Quantity</span>
+                                            <span class="quantity">7</span>
+                                        </td>
+                                        <td>
+                                            <span class="title">Summary</span>
+                                            <strong class="price">133</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="middle">
+                                            <a href="#" class="visual"><img src="images/product/img02.jpg" width="220" height="293" alt="image description"></a>
+                                        </td>
+                                        <td>
+                                            <a href="#" class="name">Dolce &amp; Gabbana <br>COOL WATER</a>
+                                            <span class="description">1.7 Fl Oz <i>/</i> 8 ml</span>
+                                            <strong class="price">19</strong>
+                                        </td>
+                                        <td>
+                                            <span class="title">Quantity</span>
+                                            <span class="quantity">7</span>
+                                        </td>
+                                        <td>
+                                            <span class="title">Summary</span>
+                                            <strong class="price">133</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="total">
+                                <div class="col">
+                                    Your current discount:
+                                    <br>15%
+                                </div>
+                                <div class="col">
+                                    Summary:
+                                    <br>
+                                    <strong class="price old-price">60</strong>
+                                    <strong class="price">30</strong>
+                                    <span class="bonus"><i class="fa fa-gift" aria-hidden="true"></i>+130</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="bottom-info">
+            <div class="container feed-block">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-google"></a>
+                    </li>
+                </ul>
+                <form action="#" method="post" class="subscribe-form">
+                    <fieldset>
+                        <label>subscribe and get <b>15% discount</b></label>
+                        <div class="input-control">
+                            <input type="email" name="email" placeholder="Type your mail">
+                        </div>
+                        <button data-popup="on" data-href="_inc/subscribe.html" type="submit" class="button upper">subscribe</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container size-medium">
+                <h3><b>Perfumery in Baku, Azerbaijan</b></h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                    quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                    non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+                <p>Quis autem vel <br>eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <ul class="list">
+                    <li>Nemo enim ipsam voluptatem</li>
+                    <li>Quia voluptas sit aspernatur aut </li>
+                    <li>Odit aut fugit, sed quia </li>
+                    <li>Consequuntur magni dolores </li>
+                    <li>Eos qui ratione voluptatem sequi nesciunt. </li>
+                </ul>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="menu">
+                    <div class="col">
+                        <span class="title">Products<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">Perfume</a></li>
+                            <li><a href="#">Perfume for women</a></li>
+                            <li><a href="#">Perfume for men</a></li>
+                            <li><a href="#">Unisex perfumes</a></li>
+                            <li><a href="#">All perfume brands</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">SUPPORT<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Free shipping</a></li>
+                            <li><a href="#">Safety payment</a></li>
+                            <li><a href="#">Original product</a></li>
+                            <li><a href="#">Cash on delivery</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">ABOUT US<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="#">About Aromania</a></li>
+                            <li><a href="#">Certificates</a></li>
+                            <li><a href="#">Mission and vision</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">USER PROFILE<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a class="call-popup" href="ajax/login.html">Login</a></li>
+                            <li><a class="call-popup" href="ajax/registration.html">Register</a></li>
+                            <li><a href="#">Wishlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <span class="title">our COntacts<i class="fa fa-chevron-right"></i></span>
+                        <ul>
+                            <li><a href="tel:+994125053650" class="fa fa-phone"><span>(+ 994 12) 505 36 50</span></a></li>
+                            <li><a href="whatsapp://send?text=Hello%20World!" class="fa fa-whatsapp"><span>(+ 994 55) 859 77 77</span></a></li>
+                            <li><a href="mailto:sales@larose.az" class="fa fa-envelope"><span>sales@larose.az</span></a></li>
+                            <li><a data-popup="on" class="fa fa-reply" href="_inc/callback.html"><span>Call back</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <strong class="logo"><a href="#">LaRose</a></strong>
+                <div class="foot-bottom">
+                    <ul>
+                        <li><a href="#">Site Map</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <em class="copyright">Larose.az 2016 © All rigths reserved. Site created by <a href="#"><strong>ONE Studio</strong></a></em>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

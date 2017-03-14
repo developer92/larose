@@ -81,13 +81,13 @@ $media-expressions: (
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
-  @include media('<desktop') {
+  @include media('screen', '<desktop') {
     max-width: 980px;
   }
-  @include media('<tablet') {
+  @include media('screen', '<tablet') {
     max-width: 768px;
   }
-  @include media('<phone') {
+  @include media('screen', '<phone') {
     max-width: 320px;
     padding: 0 10px;
   }
@@ -2437,18 +2437,18 @@ $media-expressions: (
       &:first-child {
         border-width: 1px 0 1px 1px;
         padding-left: 30px;
-        @include media('<desktop', '>tablet') {padding-left: 15px;}
+        @include media('screen', '<desktop', '>tablet') {padding-left: 15px;}
       }
       &:last-child {
         border-width: 1px 1px 1px 0;
         padding-right: 30px;
-        @include media('<desktop', '>tablet') {padding-right: 10px;}
+        @include media('screen', '<desktop', '>tablet') {padding-right: 10px;}
       }
       &.middle {
         padding-top: 0;
         padding-bottom: 0;
       }
-      @include media('<desktop', '>tablet') {padding: 10px;}
+      @include media('screen', '<desktop', '>tablet') {padding: 10px;}
     }
     .delete {
       display: inline-block;
@@ -2515,7 +2515,7 @@ $media-expressions: (
       font-size: 25px;
       padding-top: 4px;
     }
-    @include media('<phone') {
+    @include media('screen', '<phone') {
       tbody, tr, td {
         display: block;
       }
@@ -3999,6 +3999,7 @@ ul.gallery {
   @extend %clearfix;
   padding: 0;
   margin: 0 0 30px;
+  &:first-child {padding-top: 10px;}
   dt {
     display: inline-block;
     vertical-align: top;
@@ -4022,7 +4023,8 @@ ul.gallery {
       white-space: pre;
     }
   }
-  @include media('<phone') {
+  @include media('screen', '<tablet') {&:first-child {padding-top: 0;}}
+  @include media('screen', '<phone') {
     margin-bottom: 15px;
   }
 }
@@ -4906,4 +4908,118 @@ ol {
   textarea {
     height: 106px !important;
   }
+}
+
+.block-404 {
+  @extend %clearfix;
+  padding: 4px 0 20px;
+  .pic, .frame {
+    float: left;
+    width: 50%;
+  }
+  .pic {
+    @include v-align;
+    @include media('<phone') {
+      width: 80px;
+      padding-right: 15px;
+    }
+  }
+  img {
+    vertical-align: middle;
+  }
+  .frame {
+    padding: 60px 0 0;
+    margin-left: -60px;
+    font-size: 20px;
+    line-height: 25px;
+    @include media('<phone') {
+      float: none;
+      overflow: visible;
+      width: 100%;
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 21px;
+      padding-top: 10px;
+    }
+  }
+  .title {
+    display: block;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0 0 50px;
+    @include media('<tablet') {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 30px;
+    }
+    @include media('<phone') {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 20px;
+    }
+  }
+  nav {
+    padding: 20px 0 0;
+    @include media('<phone') {padding: 10px 0;}
+  }
+  ul {
+    @extend %listreset;
+    @extend %clearfix;
+  }
+  li {
+    float: left;
+    margin: 0 30px 0 0;
+    font: 20px/25px $base-font-serif;
+    text-transform: uppercase;
+    &:last-child {margin-right: 0;}
+    @include media('<phone') {
+      font-size: 16px;
+      line-height: 21px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.order-results {
+  padding: 12px 0 0;
+  font: 30px/45px $base-font-serif;
+  border-bottom: 2px solid #dce3eb;
+  margin-bottom: 35px;
+  p {margin-bottom: 50px;}
+  @include media('screen', '<tablet') {
+    font-size: 24px;
+    line-height: 35px;
+    p {margin-bottom: 35px;}
+  }
+  @include media('screen', '<phone') {
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 0;
+    p {margin-bottom: 20px;}
+  }
+}
+
+.results {
+  @extend %clearfix;
+  padding: 0 0 30px;
+  .column {
+    float: left;
+    width: 50%;
+    @include media('screen', '<tablet') {
+      float: none;
+      width: 100%;
+    }
+  }
+  @include media('screen', '<tablet') {
+    .button {margin-bottom: 20px;}
+  }
+}
+
+@include media('print') {
+  * {-webkit-print-color-adjust: exact;}
+  body {min-width: 1000px;}
+  #panel, #header, .brands-panel, .bottom-info, #footer, .breadcrumbs, h1, .h1, .results .button {display: none;}
+  .order-results {padding-top: 300px;}
 }
