@@ -170,7 +170,8 @@ $media-expressions: (
     display: inline-block;
     vertical-align: top;
     position: relative;
-    font-weight: normal;
+    font-weight: 500;
+    padding: 0 4px;
     &:before {
       content: '';
       position: absolute;
@@ -179,8 +180,43 @@ $media-expressions: (
       left: 0;
       right: 0;
       background-color: $red;
+      transform: rotate(-10deg);
     }
     &:after {font-weight: 400;}
+  }
+}
+
+.price-frame {
+  .price {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .old {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 4px;
+    margin: 0 0 0 6px;
+    color: $gray;
+    font-weight: 500;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: rotate(-10deg);
+      height: 1px;
+      background-color: $red;
+      pointer-events: none;
+    }
+    &:after {
+      content: ' \20BC';
+      font-weight: 500;
+      font-size: 24px;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
   }
 }
 
@@ -1437,10 +1473,22 @@ $media-expressions: (
     &:after {font-size: 33px;}
   }
   .old {
-    text-decoration: line-through;
     display: inline-block;
     vertical-align: bottom;
-    padding: 0 0 2px 2px;
+    margin: 0 0 2px 2px;
+    padding: 0 4px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: rotate(-10deg);
+      height: 1px;
+      background-color: $red;
+      pointer-events: none;
+    }
   }
   .discount {
     color: $red;
